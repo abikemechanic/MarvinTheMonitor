@@ -123,3 +123,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# PyCharm specific folders/files
+.idea
+
+# keep config files out
+server_config.cfg
