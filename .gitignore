@@ -126,6 +126,14 @@ dmypy.json
 
 # PyCharm specific folders/files
 .idea
+.idea\
 
 # keep config files out
 server_config.cfg
+
+
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+
+.idea/misc.xml
