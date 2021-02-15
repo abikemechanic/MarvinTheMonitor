@@ -136,4 +136,4 @@ server_config.cfg
 .idea/inspectionProfiles/Project_Default.xml
 .idea/misc.xml
 
-.idea/misc.xml
+*secrets.py
