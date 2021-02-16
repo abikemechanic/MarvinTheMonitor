@@ -12,7 +12,9 @@ class TwitterClient:
 
     def update_status_with_media(self, status_text, status_media_file):
         resp = self.api.media_upload(status_media_file)
-        
+
+    def update_staus_with_test(self, status_text):
+        self.api.update_status(status_text)
 
 
 tc = TwitterClient()

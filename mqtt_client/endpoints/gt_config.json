@@ -1,0 +1,52 @@
+{
+    "modules":[
+        {
+            "module_type": "heater",
+            "id": "heater_01",
+            "controlPin": 9,
+            "maxTemp": 82,
+            "minTemp": 75,
+            "maxRunTime": 300,
+            "minOffTime": 30,
+            "temperature_sub_topic": "test_topic",
+            "update_frequency": 5,
+            "subscribe":[
+                "set_state",
+                "set_maxRunTime",
+                "set_minOffTime",
+                "set_maxTemp",
+                "set_minTemp",
+                "set_controlPin"
+            ],
+            "publish":[
+                "current_state",
+                "on_time",
+                "off_time"
+            ]
+        },
+        {
+            "module_type": "led_light",
+            "id": "led_light_01",
+            "control_pin": 8,
+            "run_time": 43200,
+            "on_time": "5:00:00"
+        },
+        {
+            "module_type": "exhaust_fan",
+            "id": "fan_01",
+            "control_pin": 7,
+            "maxTemp": 80,
+            "minTemp": 75,
+            "minOffTime": 60
+        },
+        {
+            "module_type": "circulating_fan",
+            "id": "fan_02",
+            "control_pin": 6
+        }
+    ],
+    "topic_root": "relay_box",
+    "client_id": "Marvin_",
+    "server_ip": "192.168.1.2",
+    "server_port": 1883
+}
