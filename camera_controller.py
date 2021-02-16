@@ -19,6 +19,8 @@ class ImageZMQController:
                 recv_name, jpg_buffer = image_hub.recv_jpg()
                 self.image_dict[recv_name] = jpg_buffer
                 image_hub.send_reply(b'OK')
+                cv.imshow('test image', cv.imdecode(jpg_buffer))
+                cv.waitKey(1)
 
 
 class ImageStorage:
